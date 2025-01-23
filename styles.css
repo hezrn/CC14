@@ -34,10 +34,10 @@ header p {
     height: calc(100vh - 100px);
     overflow: hidden;
     box-sizing: border-box;
+    background: light brown;
 }
 
 section {
-    background: light brown;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
