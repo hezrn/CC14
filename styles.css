@@ -23,7 +23,7 @@ header h1 {
 header p {
     margin: 5px 0 0;
     font-size: 1.2rem;
-    font-syle: sans-serif
+    font-syle: sans-serif;
 }
 
 .grid-container {
@@ -65,4 +65,5 @@ section p {
     font-size: 0.9rem;
     color: #555;
     text-align: justify;
+    font-style: sans-serif;
 }
