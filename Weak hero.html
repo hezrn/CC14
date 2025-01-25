@@ -30,57 +30,60 @@
         }
 
         header p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin: 0 auto;
-            max-width: 1200px;
+            font-size: 1rem;
+            margin-top: 5px;
         }
 
         .series-detail {
-            background: #1e1e1e;
-            color: #ecf0f1;
+            background: #c7bebe;
+            color: #050c0e;
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-            margin: 20px;
-            max-width: 1200px;
             margin: 20px auto;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 1rem;
+        }
+
+        .series-detail .reflection {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-bottom: 0px;
+            text-align: justify;
+        }
+
+        .series-detail .images-grid {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            
         }
 
         .series-detail img {
             width: 100%;
             height: auto;
-            max-height: 400px;
-            object-fit: contain;
+            height: auto;
+            object-fit: cover;
             border-radius: 10px;
-            margin-bottom: 20px;
         }
 
-        .series-detail p {
+        .series-detail .text-content {
             font-size: 1.1rem;
-            line-height: 1.6;
+            line-height: 1.5;
+            text-align: justify;
         }
+
 
         .series-detail h2 {
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             color: #4caf50;
             margin-top: 20px;
         }
 
-        .images-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .images-grid img {
-            width: 100%; 
-            height: auto; 
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
         .series-detail ul {
             font-size: 1.1rem;
             list-style-type: square;
@@ -102,6 +105,14 @@
         .back-link a:hover {
             color: #ecf0f1;
         }
+        
+        footer {
+            text-align: center;
+            padding: 1px;
+            background-color: #1e1e2f;
+            color: #f5f5f5;
+            margin-top: 20px;
+        }
 
     </style>
 
@@ -112,15 +123,25 @@
         <p>An exploration of the thrilling and emotional story of Weak Hero Class 1.</p>
     </header>
     <main>
-        <div class="images-grid">
-            <img src="wh1.jpg" alt="Weak Hero Poster">
-            <img src="wh2.jpg" alt="Weak Hero Poster">
-        </div>
-            <h2><strong>Summary:</strong></h2> <p>Weak Hero Class 1 follows Yeon Shi-eun, a top student who is physically weak but uses his intellect and strategy to combat school bullies and protect his friends. The series is a gripping tale of resilience, loyalty, and the fight against injustice.</p>
-            
-            <h2><strong>Key Themes:</strong></h2> <p> Bullying, Friendship, Resilience, Strategy, and Overcoming Adversity.</p>
+        <section class="series-detail">
+            <div class="reflection">
+                <p>
+                    This Kdrama is such an emotional rollercoaster! From the gripping storyline to the raw intensity of the fight scenes, it had me hooked every step of the way. I really connected with Yeon Si-eun and his journey of standing up against bullies despite the odds. The bond between the characters, their struggles, and the sacrifices they make for one another add so much depth. It’s a series that keeps you on edge, with moments of suspense, heartbreak, and triumph that stay with you long after watching.</p>
+                </p>
+            </div>
+            <div class="images-grid">
+                <img src="wh1.jpg" alt="Weak Hero Poster">
+                <img src="wh2.jpg" alt="Weak Hero Poster">
+            </div>
+            <div class="text-content">
+            <h2><strong>Summary:</strong></h2>
+            <p>Weak Hero Class 1 is a gripping South Korean drama series that delves into the life of Yeon Si-eun, a quiet and academically gifted high school student who appears fragile but hides an unparalleled strategic mind. Despite being targeted by bullies due to his unassuming demeanor, Si-eun uses his intelligence, quick reflexes, and creativity to outmaneuver and defeat those who threaten him.
 
-            <h2><strong>My Favorite Characters:</strong></h2>
+                The series explores themes of friendship, resilience, and the harsh realities of school violence as Si-eun forges unexpected bonds with his peers Su-ho and Beom-seok, who stand by him in his fight against oppressive forces. Together, they navigate the trials of survival in a world where strength isn't just physical. Weak Hero Class 1 is an intense blend of action and emotional depth, showcasing the power of wit and courage against adversity.</p>
+            
+            <h2><strong>Key Themes:</strong></h2><p> Bullying, Friendship, Resilience, Strategy, and Overcoming Adversity.</p>
+
+            <h2>My Favorite Characters:</h2>
             <ul>
                 <li><strong>Yeon Shi-eun:</strong> The intelligent and resourceful protagonist who refuses to back down from bullies.</li>
                 <li><strong>Ahn Soo-ho:</strong> A loyal friend who uses his strength to protect those he cares about.</li>
@@ -133,5 +154,8 @@
             <a href="index.html">Back to Favorite Series</a>
         </section>
     </main>
+    <footer>
+        <p>&copy; Hezreen's Favorite Series</p>
+    </footer>
 </body>
 </html>
